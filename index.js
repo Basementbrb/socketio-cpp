@@ -1,14 +1,23 @@
 import express from 'express';
 import http from 'http';
+import io from 'socket.io';
 
+const httpPort = 3000;
+const wsPort = 9000;
 const app = express();
-const server = http.createServer(app);
-const port = process.env.port || 9000;
+const httpServer = http.createServer(app);
+const wsServer = io.listen(wsPort);
 
 app.get('/', (request, response) => {
     response.send('<h1>Hello world</h1>');
 });
 
-server.listen(port, () => {
-    console.log(`Listening on port ${port}`);
+httpServer.listen(httpPort, () => {
+    console.log(`Listening to HTTP requests on port ${httpPort}`);
 });
+
+wsServer.on('connection', socket => {
+    console.log('User connected');
+});
+
+console.log(`Listening to WebSocket requests on port ${wsPort}`);
