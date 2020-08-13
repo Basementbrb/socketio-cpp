@@ -8,9 +8,7 @@ const app = express();
 const httpServer = http.createServer(app);
 const wsServer = io.listen(wsPort);
 
-app.get('/', (request, response) => {
-    response.send('<h1>Hello world</h1>');
-});
+app.use(express.static('dist'));
 
 httpServer.listen(httpPort, () => {
     console.log(`Listening to HTTP requests on port ${httpPort}`);
