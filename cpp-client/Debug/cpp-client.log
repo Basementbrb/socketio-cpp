@@ -1,0 +1,10 @@
+﻿  cpp-client.cpp
+  sio_client_impl.cpp
+C:\boost\boost_1_73_0\boost\bind.hpp(41): message : The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.
+  sio_packet.cpp
+  sio_client.cpp
+C:\boost\boost_1_73_0\boost\bind.hpp(41): message : The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.
+  sio_socket.cpp
+C:\boost\boost_1_73_0\boost\bind.hpp(41): message : The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.
+  Generating Code...
+  cpp-client.vcxproj -> C:\Repositories\cpp-client\Debug\cpp-client.exe
