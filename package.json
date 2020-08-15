@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm-run-all -p nodemon build",
+    "prestart": "webpack",
+    "start": "node -r esm index.js",
     "develop": "npm-run-all -p nodemon watch",
-    "build": "webpack",
     "nodemon": "nodemon -r esm index.js",
     "watch": "webpack --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
