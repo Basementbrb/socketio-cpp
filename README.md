@@ -19,7 +19,7 @@ npm install
 to download modules.
 
 ```
-npm run start develop
+npm run develop
 ```
 to develop. Uses `nodemon` and `webpack --watch` to actively monitor for any changes in source files.
 
