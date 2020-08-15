@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "prestart": "webpack",
-    "start": "node -r esm index.js",
-    "develop": "npm-run-all -p nodemon watch",
+    "start": "npm-run-all -p nodestart cppstart",
+    "cppstart": "cd cpp-client/x64/Debug/ && cpp-client.exe",
+    "nodestart": "node -r esm index.js",
+    "develop": "npm-run-all -p nodemon watch cppstart",
     "nodemon": "nodemon -r esm index.js",
     "watch": "webpack --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
