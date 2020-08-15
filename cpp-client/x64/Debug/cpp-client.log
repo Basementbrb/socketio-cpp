@@ -1,0 +1,20 @@
+﻿  cpp-client.cpp
+C:\Repositories\socketio cpp\cpp-client\cpp-client.cpp(101,5): warning C4129: 'e': unrecognized character escape sequence
+  sio_client_impl.cpp
+C:\Repositories\socketio cpp\cpp-client\lib\websocketpp\websocketpp\frame.hpp(834,25): warning C4267: '=': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\boost\boost_1_73_0\boost\bind.hpp(41): message : The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.
+C:\Repositories\socketio cpp\cpp-client\lib\websocketpp\websocketpp\common\md5.hpp(367,34): warning C4267: '+=': conversion from 'size_t' to 'websocketpp::md5::md5_word_t', possible loss of data
+C:\Repositories\socketio cpp\cpp-client\lib\websocketpp\websocketpp\sha1\sha1.hpp(176,28): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+  sio_packet.cpp
+  sio_client.cpp
+C:\Repositories\socketio cpp\cpp-client\lib\websocketpp\websocketpp\frame.hpp(834,25): warning C4267: '=': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\boost\boost_1_73_0\boost\bind.hpp(41): message : The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.
+C:\Repositories\socketio cpp\cpp-client\lib\websocketpp\websocketpp\common\md5.hpp(367,34): warning C4267: '+=': conversion from 'size_t' to 'websocketpp::md5::md5_word_t', possible loss of data
+C:\Repositories\socketio cpp\cpp-client\lib\websocketpp\websocketpp\sha1\sha1.hpp(176,28): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+  sio_socket.cpp
+C:\Repositories\socketio cpp\cpp-client\lib\websocketpp\websocketpp\frame.hpp(834,25): warning C4267: '=': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\boost\boost_1_73_0\boost\bind.hpp(41): message : The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.
+C:\Repositories\socketio cpp\cpp-client\lib\websocketpp\websocketpp\common\md5.hpp(367,34): warning C4267: '+=': conversion from 'size_t' to 'websocketpp::md5::md5_word_t', possible loss of data
+C:\Repositories\socketio cpp\cpp-client\lib\websocketpp\websocketpp\sha1\sha1.hpp(176,28): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+  Generating Code...
+  cpp-client.vcxproj -> C:\Repositories\socketio cpp\cpp-client\x64\Debug\cpp-client.exe
