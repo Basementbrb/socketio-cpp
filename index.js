@@ -25,6 +25,12 @@ wsServer.on('connection', socket => {
     socket.on('cpp-pong', () => {
         socket.broadcast.emit('web-pong');
     });
+    socket.on('slider-change', value => {
+        socket.broadcast.emit('slider-value', value);
+    });
+    socket.on('circle-change', value => {
+        socket.broadcast.emit('circle-value', value);
+    });
 });
 
 console.log(`Listening to WebSocket requests on port ${wsPort}`);

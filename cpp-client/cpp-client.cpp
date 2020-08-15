@@ -6,6 +6,8 @@
 #include <mutex>
 #include <condition_variable>
 #include <string>
+#include <boost/math/constants/constants.hpp>
+
 #ifdef WIN32
 #define HIGHLIGHT(__O__) std::cout<<__O__<<std::endl
 #define EM(__O__) std::cout<<__O__<<std::endl
@@ -66,6 +68,14 @@ void bind_events()
     current_socket->on("cpp-ping", sio::socket::event_listener_aux([&](string const& name, message::ptr const& data, bool isAck, message::list& ack_resp)
         {
             current_socket->emit("cpp-pong");
+        }));
+
+    current_socket->on("slider-value", sio::socket::event_listener_aux([&](string const& name, message::ptr const& data, bool isAck, message::list& ack_resp)
+        {
+            string value = data->get_string();
+            double perimeter = 2 * boost::math::constants::pi<double>() * std::stoi(value);      
+            string change = boost::lexical_cast<string>(perimeter);
+            current_socket->emit("circle-change", change);
         }));
 }
 
